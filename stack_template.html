@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizing HTML Files</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 200vh;
+        }
+        
+        iframe {
+            margin: 1%;
+            padding: 1%;
+            width: 95%;
+            height: 20%;
+            
+            border: 5%;
+        }
+    </style>
+</head>
+<body>
+
+    {% for html_in in html_input %}
+        <iframe src="{{html_in}}"></iframe>
+    {% endfor %}
+
+ 
+
+    <!-- Add more iframes for additional files -->
+</body>
+</html>
