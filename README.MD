@@ -21,3 +21,12 @@ python seqspecview.py seqspec.yaml
 python seqspecview.py 10xCRISPR_spec.yaml
 ```
 Open render.html to see all the views  
+
+install
+
+```python
+pip jinja2
+
+pip yaml
+pip pandas as pd
+```
