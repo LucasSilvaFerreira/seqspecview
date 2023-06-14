@@ -26,7 +26,6 @@ install
 
 ```python
 pip jinja2
-
 pip yaml
-pip pandas as pd
+pip pandas
 ```
