@@ -29,3 +29,9 @@ pip jinja2
 pip yaml
 pip pandas
 ```
+
+
+TODO
+- [ ] improve the parser (parse the multi-dogmaseq spec)
+- [ ] Remove duplicated regions
+- [ ] show the hierarchy nodes

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .main-div {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .block {
+            height: 100%;
+            transition: background-color 0.5s;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-shadow: 2px 2px 4px #000000;
+            border-right: 2px solid white;
+        }
+        .block:last-child {
+            border-right: none;
+        }
+        .block:hover {
+            color: black;
+            text-shadow: none;
+        }
+        .block:hover .hover-info {
+            display: block;
+        }
+        .hover-info {
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 60px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            line-height: 60px;
+            border: 1px solid black;
+            border-radius: 5px;
+            display: none;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<h1>Read 1 fastq multi-dogmaseq-lll_spec.yaml</h1>
+<body>
+
+    <div class="main-div">
+        
+            <div class="block" style="width: 20%; background-color: #EC7063;">
+                <div class="hover-info">Read 1 fastq</div>
+                <span>Cell Barcode:(16)</span>
+            </div>
+        
+            <div class="block" style="width: 15%; background-color: #58D68D;">
+                <div class="hover-info">Read 1 fastq</div>
+                <span>umi:(12)</span>
+            </div>
+        
+            <div class="block" style="width: 65%; background-color: #5499C7;">
+                <div class="hover-info">Read 1 fastq</div>
+                <span>gdna:(52)</span>
+            </div>
+        
+    </div>
+
+</body>
+</html>
